@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>landing page</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='vendors/themify-icons/css/themify-icons.css')}}">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='/css/meyawo.css')}}">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Resume</a>
+            <ul class="nav">
+                <li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">Components</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">Resume Evaluator</span>
+                <!-- <span class="down">Resume Evaluator</span> -->
+            </h1>
+            <!-- <p class="header-subtitle">FRONTEND WEB DESIGNER</p>             -->
+
+            <!-- <button class="btn btn-primary">Visit My Works</button> -->
+        </div>
+    </header>
+    <div>
+        <form action="{{url_for('upload')}}" method="post" enctype="multipart/form-data">
+            <label for="resumes">Upload Resumes (PDF/DOCX):</label>
+            <input type="file" name="resumes" multiple required>
+            <br><br>
+            <label for="job_description">Upload Job Description (TXT):</label>
+            <input type="file" name="job_description" required>
+            <br><br>
+            <button type="submit" class="btn btn-primary">Evaluate Resumes</button>
+        </form>
+
+    </div>
+
+
+    <script src="{{url_for('static',filename='js/meyawo.js')}}"></script>
+
+</body>
+
+</html>

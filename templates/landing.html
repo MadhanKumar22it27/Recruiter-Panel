@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recruiter Dashboard</title>
+</head>
+<body>
+    <h1>Upload Resumes and Job Description</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="resumes">Upload Resumes (PDF/DOCX):</label>
+        <input type="file" name="resumes" multiple required>
+        <br><br>
+        <label for="job_description">Upload Job Description (TXT):</label>
+        <input type="file" name="job_description" required>
+        <br><br>
+        <button type="submit">Evaluate Resumes</button>
+    </form>
+</body>
+</html>

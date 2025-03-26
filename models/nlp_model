@@ -1,0 +1,6 @@
+'''
+The models/nlp_model/ folder is intended to store custom-trained NLP models or pre-trained models that you might use for advanced tasks like Named Entity Recognition (NER),
+text classification, or other NLP tasks. If you're using a pre-trained model (like spaCy's en_core_web_sm), you don't need to store it here, as spaCy handles model loading internally. However, if you fine-tune a model or use a custom model, you can store it in this folder.
+
+For now, I'll provide an example of how to fine-tune a spaCy NER model and save it to the models/nlp_model/ folder. This is useful if you want to improve the model's ability to recognize specific entities (e.g., skills, certifications, etc.) in resumes.
+'''
